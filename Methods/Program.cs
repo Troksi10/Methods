@@ -20,7 +20,7 @@ Console.WriteLine("Please Enter some number!");
 string userInput = Console.ReadLine();
 
 int num1 = 5;
-int num2 = 0;
+int num2 = 2;
 int result;
 
 try
@@ -70,13 +70,46 @@ Console.WriteLine("Is it sunny? {0}",!isSunny);
 int someNum = 0;
 someNum++;
 Console.WriteLine("num is {0}", someNum);
+Console.WriteLine("num is {0}", someNum++);
 
 // pre increment
 Console.WriteLine("num is {0}", ++someNum);
 
 // decrement 
 
-Console.WriteLine();
+Console.WriteLine("num is {0}", someNum);
+Console.WriteLine("num is {0}", someNum--);
+
+// pre decrement
+Console.WriteLine("num is {0}", --someNum);
+
+// relational and type operators
+
+bool isLower;
+isLower = num1 < num2;
+Console.WriteLine("result of num1 < num2 is {0}",isLower);
+
+// equality operator
+
+bool isEqual;
+isEqual = num1 == num2;
+Console.WriteLine("result of num1 == num2 is {0}", isEqual);
+
+isEqual = num1 != num2;
+Console.WriteLine("result of num1 != num2 is {0}", isEqual);
+
+// conditional operators
+
+bool isLowerAndSunny;
+
+// AND operator
+isLowerAndSunny = isLower && isSunny;
+Console.WriteLine("result of isLower && isSunny is {0}", isLowerAndSunny);
+
+// OR operator
+
+isLowerAndSunny = isLower || isSunny;
+Console.WriteLine("result of isLower || isSunny is {0}", isLowerAndSunny);
 
 Console.ReadLine();
 
